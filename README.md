@@ -1,4 +1,7 @@
 # MainsMonitor
+
+## WARNING - DO NOT POWER THIS WITH AN ADAPTER THAT IS CAPABLE OF SUPPLYING MORE THAN 1 AMP OR ELSE THE IN4001 DIODE WILL BLOW!
+
 ATMEGA328p power cut monitor
 
 This project monitors mains and detects when the power is removed.
