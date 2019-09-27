@@ -9,18 +9,18 @@ It has a battery backed RTC for timestamping.
 
 There are 3 record types :
 
-*POWER RESET - When the ATMEGA code executes a reset. I.e. the supercapcitors have completely run out.
-*POWER LOST - When power is lost
-*POWER UP - When power is restored (this will come 5s after good power is restored - to make sure it is good!).
+* POWER RESET - When the ATMEGA code executes a reset. I.e. the supercapcitors have completely run out.
+* POWER LOST - When power is lost
+* POWER UP - When power is restored (this will come 5s after good power is restored - to make sure it is good!).
 
 You can connect the unit to a standard Arduino UNO (minus it's chip) via the programming header.
 
 The serial port runs at 9600,8,N,1.
 
-There are 3 commands : 
+There are 3 commands all terminated by a carriage return: 
 
-*info<CR> - This returns all stored records as readable ASCII text.
-*rst<CR> - This resets the record count to zero.
-*datetime DD/MM/YY HH:MM:SS<CR> - Sets the time.
+* info - This returns all stored records as readable ASCII text.
+* rst - This resets the record count to zero.
+* datetime DD/MM/YY HH:MM:SS - Sets the time.
   
   
